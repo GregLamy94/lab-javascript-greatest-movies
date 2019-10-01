@@ -1,6 +1,17 @@
 /* eslint no-restricted-globals: 'off' */
 
+// import {movies} from `/data.js` ; 
+
+function ratesAverage (tabMovies) {
+    var totalNotes = tabMovies.reduce(function(sum, note){
+        return sum + note.rate;
+      },0); 
+      return totalNotes/tabMovies.length ; 
+    }
+
+
 // Iteration 1: All rates average - Get the average of all rates with 2 decimals 
+
 
  
 // Iteration 2: Drama movies - Get the average of Drama Movies
